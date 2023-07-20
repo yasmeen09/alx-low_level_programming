@@ -1,8 +1,19 @@
-#ifndef main_h
-#define main_h
+#include "main.h"
+#include <stdio.h>
 
-#include <sdtio.h>
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char c;
 
-int _putchar(char c);
-int _isupper(int c);
-#endif
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
+    return (0);
+}
+
